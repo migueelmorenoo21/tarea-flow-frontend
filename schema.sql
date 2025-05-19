@@ -7,6 +7,9 @@ CREATE TABLE users (
   name TEXT NOT NULL,
   email TEXT UNIQUE NOT NULL,
   password_hash TEXT NOT NULL,
+  bio TEXT, -- Biografía del usuarioº
+  pais TEXT,                         -- Biografía del usuario
+  profesion TEXT,                   -- Profesión u ocupación
   is_company BOOLEAN DEFAULT FALSE, -- true = cuenta empresa
   plan TEXT DEFAULT 'free',         -- 'free', 'premium', 'enterprise'
   created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP

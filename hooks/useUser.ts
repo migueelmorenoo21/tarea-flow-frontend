@@ -1,14 +1,6 @@
 import { useState, useEffect } from "react";
 import { useAuth } from "../context/AuthContext"; // Ajusta si el path es distinto
-
-interface User {
-  id: string;
-  name: string;
-  email: string;
-  isCompany: boolean;
-  plan: string;
-  createdAt: string;
-}
+import { User } from "../types/user"; // Ajusta si el path es distinto
 
 function isUser(data: any): data is User {
   return (
